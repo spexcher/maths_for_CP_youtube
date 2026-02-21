@@ -7,6 +7,7 @@ int main()
     ll N;
     cin >> N;
     vector<bool> prime(N, true);
+    prime[1]=false;
     for (int n = 1; n <= N; n++)
     {
         for (ll i = 2; i * i <= n; i++)
